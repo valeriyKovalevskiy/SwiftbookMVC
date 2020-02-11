@@ -16,6 +16,10 @@
 		78BB5C4B23F331BE00DC81EC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 78BB5C4A23F331BE00DC81EC /* .gitignore */; };
 		78BB5C5623F338C700DC81EC /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C5523F338C700DC81EC /* CommentCell.swift */; };
 		78BB5C5823F339CE00DC81EC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C5723F339CE00DC81EC /* Comment.swift */; };
+		78BB5C5C23F33CC300DC81EC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C5B23F33CC300DC81EC /* NetworkService.swift */; };
+		78BB5C5F23F342B500DC81EC /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C5E23F342B500DC81EC /* CommentNetworkService.swift */; };
+		78BB5C6123F3439E00DC81EC /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C6023F3439E00DC81EC /* GetCommentResponse.swift */; };
+		78BB5C6323F344A700DC81EC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB5C6223F344A700DC81EC /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		78BB5C4A23F331BE00DC81EC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		78BB5C5523F338C700DC81EC /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		78BB5C5723F339CE00DC81EC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		78BB5C5B23F33CC300DC81EC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		78BB5C5E23F342B500DC81EC /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		78BB5C6023F3439E00DC81EC /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		78BB5C6223F344A700DC81EC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		78BB5C4C23F3327E00DC81EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78BB5C6223F344A700DC81EC /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +107,7 @@
 		78BB5C4F23F332A200DC81EC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				78BB5C5923F33C9700DC81EC /* Services */,
 				78BB5C4C23F3327E00DC81EC /* Model */,
 				78BB5C4D23F3328400DC81EC /* View */,
 				78BB5C4E23F3328900DC81EC /* Controller */,
@@ -108,6 +118,7 @@
 		78BB5C5023F332EB00DC81EC /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				78BB5C5D23F3429900DC81EC /* CommentNetworkService */,
 				78BB5C5323F332FB00DC81EC /* Model */,
 				78BB5C5223F332F600DC81EC /* View */,
 				78BB5C5123F332F000DC81EC /* Controller */,
@@ -136,8 +147,25 @@
 			isa = PBXGroup;
 			children = (
 				78BB5C5723F339CE00DC81EC /* Comment.swift */,
+				78BB5C6023F3439E00DC81EC /* GetCommentResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		78BB5C5923F33C9700DC81EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78BB5C5B23F33CC300DC81EC /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78BB5C5D23F3429900DC81EC /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				78BB5C5E23F342B500DC81EC /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +244,11 @@
 				78BB5C3B23F330CF00DC81EC /* CommentsViewController.swift in Sources */,
 				78BB5C3723F330CF00DC81EC /* AppDelegate.swift in Sources */,
 				78BB5C3923F330CF00DC81EC /* SceneDelegate.swift in Sources */,
+				78BB5C5C23F33CC300DC81EC /* NetworkService.swift in Sources */,
+				78BB5C6123F3439E00DC81EC /* GetCommentResponse.swift in Sources */,
+				78BB5C6323F344A700DC81EC /* NetworkError.swift in Sources */,
 				78BB5C5623F338C700DC81EC /* CommentCell.swift in Sources */,
+				78BB5C5F23F342B500DC81EC /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
