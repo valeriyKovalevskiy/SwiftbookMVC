@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftbookMVCN
 //
-//  Created by валерий on 2/11/20.
+//  Created by Valeriy Kovalevskiy on 2/11/20.
 //  Copyright © 2020 v.kovalevskiy. All rights reserved.
 //
 
