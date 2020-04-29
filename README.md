@@ -1,3 +1,1 @@
-# SwiftbookMVCN
-
-MVC architecture according Swiftbook cource
+Swiftbook MVC course
